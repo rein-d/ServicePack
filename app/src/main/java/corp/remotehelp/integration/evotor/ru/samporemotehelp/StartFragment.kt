@@ -35,11 +35,11 @@ class StartFragment : Fragment() {
                     ctoHelp()
                 }.await()
                 val json = response.body()?.string()
+                val answer = gson.fromJson<Answer>(json, Answer::class.java)
                 launch(Dispatchers.Main) {
-                    if (response.code() == 2020) {
+                    if (response.code() == 200) {
                         (activity as MainActivity).success()
                     } else {
-                        val answer = gson.fromJson<Answer>(json, Answer::class.java)
                         Toast.makeText(context, answer.error_message, Toast.LENGTH_LONG).show()
                     }
                 }

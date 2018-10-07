@@ -61,6 +61,8 @@
         android:layout_marginBottom="32dp"
         android:background="@color/colorAccent"
         android:text="Закрыть"
+        android:paddingStart="48dp"
+        android:paddingEnd="48dp"
         android:textColor="@android:color/white"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
