@@ -17,7 +17,9 @@ import okhttp3.*
 
 class StartFragment : Fragment() {
 
-    val client = OkHttpClient()
+    val client = OkHttpClient.Builder()
+            .hostnameVerifier { hostname, session -> true }
+            .build()
 
     val gson = GsonBuilder()
             .create()
