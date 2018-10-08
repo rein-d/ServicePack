@@ -37,7 +37,7 @@ class StartFragment : Fragment() {
                 val json = response.body()?.string()
                 val answer = gson.fromJson<Answer>(json, Answer::class.java)
                 launch(Dispatchers.Main) {
-                    if (response.code() == 200) {
+                    if (answer.result == 0L) {
                         (activity as MainActivity).success()
                     } else {
                         Toast.makeText(context, answer.error_message, Toast.LENGTH_LONG).show()
