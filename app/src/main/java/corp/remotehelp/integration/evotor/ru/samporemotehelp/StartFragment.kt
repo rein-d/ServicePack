@@ -16,6 +16,7 @@ import kotlinx.coroutines.experimental.async
 import kotlinx.coroutines.experimental.launch
 import okhttp3.*
 import okhttp3.logging.HttpLoggingInterceptor
+import java.io.IOException
 
 
 class StartFragment : Fragment() {
@@ -24,6 +25,7 @@ class StartFragment : Fragment() {
             .hostnameVerifier { hostname, session -> true }
             .addInterceptor(HttpLoggingInterceptor(HttpLoggingInterceptor.Logger { Log.e("Http", it) })
                     .apply { level = HttpLoggingInterceptor.Level.BODY })
+            .dispatcher(Dispatcher())
             .build()
 
     val gson = GsonBuilder()
@@ -36,21 +38,34 @@ class StartFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        help.setOnClickListener {
+        help.setOnClickListener { _ ->
             GlobalScope.launch {
                 val response = GlobalScope.async {
-                    ctoHelp()
+                    try {
+                        ctoHelp()
+                    } catch (ex: IOException) {
+                        null
+                    }
                 }.await()
-                val json = response.body()?.string()
-                val answer = gson.fromJson<Answer>(json, Answer::class.java)
-                launch(Dispatchers.Main) {
-                    if (response.code() == 200) {
-                        if (answer.result == 0L) {
-                            (activity as MainActivity).success()
-                        } else {
-                            Toast.makeText(context, answer.error_message, Toast.LENGTH_LONG).show()
+
+                val ctoHelpResponse = response.use {
+                    if (it?.isSuccessful == true) {
+                        it.body()?.let { responseBody ->
+                            gson.fromJson<CtoHelpResponse>(responseBody.charStream(), CtoHelpResponse::class.java)
                         }
                     } else {
+                        null
+                    }
+                }
+
+                launch(Dispatchers.Main) {
+                    ctoHelpResponse?.let {
+                        if (it.result == 0L) {
+                            (activity as MainActivity).success()
+                        } else {
+                            Toast.makeText(context, it.error_message, Toast.LENGTH_LONG).show()
+                        }
+                    } ?: run {
                         Toast.makeText(context, "Не удалось отправить запрос. Неизвестная ошибка", Toast.LENGTH_LONG).show()
                     }
                 }
@@ -67,7 +82,9 @@ class StartFragment : Fragment() {
                 .addHeader("x-device-id", "952398083823999")
                 .post(body)
                 .build()
+
         return client.newCall(request).execute()
+
     }
 
     companion object {
@@ -78,4 +95,4 @@ class StartFragment : Fragment() {
 
 }
 
-data class Answer(val result: Long, val error_message: String)
+data class CtoHelpResponse(val result: Long, val error_message: String)
