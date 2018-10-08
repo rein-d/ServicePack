@@ -3,6 +3,7 @@ package corp.remotehelp.integration.evotor.ru.samporemotehelp
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,11 +15,15 @@ import kotlinx.coroutines.experimental.GlobalScope
 import kotlinx.coroutines.experimental.async
 import kotlinx.coroutines.experimental.launch
 import okhttp3.*
+import okhttp3.logging.HttpLoggingInterceptor
+
 
 class StartFragment : Fragment() {
 
     val client = OkHttpClient.Builder()
             .hostnameVerifier { hostname, session -> true }
+            .addInterceptor(HttpLoggingInterceptor(HttpLoggingInterceptor.Logger { Log.e("Http", it) })
+                    .apply { level = HttpLoggingInterceptor.Level.BODY })
             .build()
 
     val gson = GsonBuilder()
@@ -39,10 +44,14 @@ class StartFragment : Fragment() {
                 val json = response.body()?.string()
                 val answer = gson.fromJson<Answer>(json, Answer::class.java)
                 launch(Dispatchers.Main) {
-                    if (answer.result == 0L) {
-                        (activity as MainActivity).success()
+                    if (response.code() == 200) {
+                        if (answer.result == 0L) {
+                            (activity as MainActivity).success()
+                        } else {
+                            Toast.makeText(context, answer.error_message, Toast.LENGTH_LONG).show()
+                        }
                     } else {
-                        Toast.makeText(context, answer.error_message, Toast.LENGTH_LONG).show()
+                        Toast.makeText(context, "Не удалось отправить запрос. Неизвестная ошибка", Toast.LENGTH_LONG).show()
                     }
                 }
             }
@@ -64,7 +73,7 @@ class StartFragment : Fragment() {
     companion object {
         val JSON = MediaType.parse("application/json; charset=utf-8")
         const val URL = "https://remote2.evotor.ru/remote/"
-        const val EMAIL = "{ \"email\": \"spelliar@gmail.com }"
+        const val EMAIL = "{ \"email\": \"spelliar@gmail.com\" }"
     }
 
 }
