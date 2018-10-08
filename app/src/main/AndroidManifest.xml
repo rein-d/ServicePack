@@ -17,14 +17,18 @@
             android:name="app_uuid"
             android:value="043b9a6e-3230-4d6e-915b-69a3d00ad24f" />
 
+        <meta-data
+            android:name="ru.evotor.launcher.BACKGROUND_COLOR"
+            android:value="#1ace23" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.EVOTOR" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity2"></activity>
     </application>
 
 </manifest>
