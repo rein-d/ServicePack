@@ -136,3 +136,4 @@ fabric.properties
 .idea/codeStyles/
 .idea/misc.xml
 .idea/runConfigurations.xml
+/gradlew.bat
