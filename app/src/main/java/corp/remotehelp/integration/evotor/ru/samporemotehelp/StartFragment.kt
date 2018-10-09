@@ -23,7 +23,7 @@ class StartFragment : Fragment() {
 
     val client = OkHttpClient.Builder()
             .hostnameVerifier { hostname, session -> true }
-            .addInterceptor(HttpLoggingInterceptor(HttpLoggingInterceptor.Logger { Log.e("Http", it) })
+            .addInterceptor(HttpLoggingInterceptor(HttpLoggingInterceptor.Logger { Log.d("Http", it) })
                     .apply { level = HttpLoggingInterceptor.Level.BODY })
             .dispatcher(Dispatcher())
             .build()
@@ -77,9 +77,7 @@ class StartFragment : Fragment() {
         val body = RequestBody.create(JSON, EMAIL)
         val request = Request.Builder()
                 .url(URL + "cto-help")
-                .addHeader("Authorization", "Basic YXBwXzkxOWIzMWQ0LTg0ZTItNDM2Zi1hNzgwLTU3YjYxZTJlMWFjZjpRdWFpZ2U5aFJpZTRPaGo1ZWlUaGVlYzI=")
                 .addHeader("Content-Type", "application/json")
-                .addHeader("x-device-id", "952398083823999")
                 .post(body)
                 .build()
 
