@@ -3,7 +3,6 @@ package corp.remotehelp.integration.evotor.ru.samporemotehelp
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -23,7 +22,9 @@ class StartFragment : Fragment() {
 
     val client = OkHttpClient.Builder()
             .hostnameVerifier { hostname, session -> true }
-            .addInterceptor(HttpLoggingInterceptor(HttpLoggingInterceptor.Logger { Log.d("Http", it) })
+            .addInterceptor(HttpLoggingInterceptor(HttpLoggingInterceptor.Logger {
+                //                Log.d("Http", it)
+            })
                     .apply { level = HttpLoggingInterceptor.Level.BODY })
             .dispatcher(Dispatcher())
             .build()
