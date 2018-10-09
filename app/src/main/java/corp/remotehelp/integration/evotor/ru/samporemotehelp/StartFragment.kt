@@ -88,7 +88,7 @@ class StartFragment : Fragment() {
     companion object {
         val JSON = MediaType.parse("application/json; charset=utf-8")
         const val URL = "https://remote2.evotor.ru/remote/"
-        const val EMAIL = "{ \"email\": \"spelliar@gmail.com\" }"
+        const val EMAIL = "{ \"email\": \"support@sampokkm.ru\" }"
     }
 
 }
