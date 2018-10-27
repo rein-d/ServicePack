@@ -11,6 +11,7 @@ import kotlinx.coroutines.experimental.async
 import kotlinx.coroutines.experimental.launch
 import okhttp3.*
 import okhttp3.logging.HttpLoggingInterceptor
+import ru.evotor.framework.users.UserApi
 import java.io.IOException
 
 class StartViewModel : ViewModel() {
@@ -36,6 +37,11 @@ class StartViewModel : ViewModel() {
 
     fun init(activity: MainActivity) {
         this.activity = activity
+        if (activity.resources.getBoolean(R.bool.integration)) {
+            val user = UserApi.getAuthenticatedUser(activity)
+            phoneError.value = user?.phone
+        }
+
     }
 
     fun help() {

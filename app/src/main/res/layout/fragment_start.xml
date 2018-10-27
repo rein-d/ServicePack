@@ -58,7 +58,6 @@
             android:layout_marginStart="32dp"
             android:layout_marginEnd="32dp"
             android:layout_marginBottom="64dp"
-            android:visibility="@{@bool/integration ? View.GONE:View.VISIBLE}"
             app:layout_constraintBottom_toTopOf="@+id/help"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -70,6 +69,7 @@
                 android:id="@+id/phone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:enabled="@{!@bool/integration}"
                 android:hint="Контактный номер телефона"
                 android:textSize="14sp" />
         </com.google.android.material.textfield.TextInputLayout>
