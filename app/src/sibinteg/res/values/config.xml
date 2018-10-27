@@ -1,3 +1,4 @@
 <resources>
     <string name="app_uuid">d6caf36e-d006-4fdf-bf86-c45db86355d6</string>
+    <bool name="integration">true</bool>
 </resources>

@@ -2,6 +2,15 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="corp.remotehelp.integration.evotor.ru.StartViewModel" />
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -49,6 +58,7 @@
             android:layout_marginStart="32dp"
             android:layout_marginEnd="32dp"
             android:layout_marginBottom="64dp"
+            android:visibility="@{@bool/integration ? View.GONE:View.VISIBLE}"
             app:layout_constraintBottom_toTopOf="@+id/help"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -74,6 +84,7 @@
             android:layout_marginEnd="32dp"
             android:layout_marginBottom="128dp"
             android:background="@color/colorAccent"
+            android:onClick="@{() -> viewModel.help()}"
             android:text="Запросить помощь"
             android:textColor="@android:color/white"
             android:textStyle="bold"
