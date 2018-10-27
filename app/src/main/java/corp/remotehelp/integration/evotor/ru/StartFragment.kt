@@ -1,4 +1,4 @@
-package corp.remotehelp.integration.evotor.ru.samporemotehelp
+package corp.remotehelp.integration.evotor.ru
 
 
 import android.os.Bundle
@@ -9,8 +9,8 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.google.gson.GsonBuilder
+import corp.remotehelp.integration.evotor.ru.databinding.FragmentStartBinding
 import kotlinx.android.synthetic.main.fragment_start.*
-import kotlinx.android.synthetic.main.fragment_start.view.*
 import kotlinx.coroutines.experimental.Dispatchers
 import kotlinx.coroutines.experimental.GlobalScope
 import kotlinx.coroutines.experimental.async
@@ -36,7 +36,9 @@ class StartFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_start, container, false)
+        val binding = FragmentStartBinding.inflate(inflater, container, false)
+        binding.setLifecycleOwner(this)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -87,7 +89,7 @@ class StartFragment : Fragment() {
     }
 
     fun ctoHelp(): Response {
-        val body = RequestBody.create(JSON, "{ $EMAIL, \"info\": \"${name.text}, ${phone.text}\"}")
+        val body = RequestBody.create(JSON, "{ \"email\": \"${getString(R.string.email)}\", \"info\": \"${name.text}, ${phone.text}\"}")
         val request = Request.Builder()
                 .url(URL + "cto-help")
                 .addHeader("Content-Type", "application/json")

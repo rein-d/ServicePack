@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="corp.remotehelp.integration.evotor.ru.samporemotehelp">
+    package="corp.remotehelp.integration.evotor.ru">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -14,7 +14,7 @@
         tools:ignore="GoogleAppIndexingWarning">
         <meta-data
             android:name="app_uuid"
-            android:value="043b9a6e-3230-4d6e-915b-69a3d00ad24f" />
+            android:value="@string/app_uuid" />
 
         <meta-data
             android:name="ru.evotor.launcher.BACKGROUND_COLOR"

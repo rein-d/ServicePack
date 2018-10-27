@@ -1,4 +1,4 @@
-package corp.remotehelp.integration.evotor.ru.samporemotehelp
+package corp.remotehelp.integration.evotor.ru
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
