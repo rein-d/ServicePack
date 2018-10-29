@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/tools">
 
     <data>
 
@@ -40,13 +41,15 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/toolbar"
-            app:layout_constraintVertical_chainStyle="packed">
+            app:layout_constraintVertical_chainStyle="packed"
+            bind:error="@{viewModel.nameError}">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Как к вам обращаться?"
+                android:text="@={viewModel.name}"
                 android:textSize="14sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -63,7 +66,8 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
-            app:layout_constraintVertical_chainStyle="packed">
+            app:layout_constraintVertical_chainStyle="packed"
+            bind:error="@{viewModel.phoneError}">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/phone"
@@ -71,6 +75,7 @@
                 android:layout_height="wrap_content"
                 android:enabled="@{!@bool/integration}"
                 android:hint="Контактный номер телефона"
+                android:text="@={viewModel.phone}"
                 android:textSize="14sp" />
         </com.google.android.material.textfield.TextInputLayout>
 

@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_id">043b9a6e-3230-4d6e-915b-69a3d00ad24f</string>
+    <string name="app_uuid">043b9a6e-3230-4d6e-915b-69a3d00ad24f</string>
     <bool name="integration">false</bool>
 </resources>
