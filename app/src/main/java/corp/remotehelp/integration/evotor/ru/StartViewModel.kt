@@ -89,7 +89,7 @@ class StartViewModel : ViewModel() {
     }
 
     fun ctoHelp(): Response {
-        val body = RequestBody.create(JSON, "{ \"email\": \"${activity.getString(R.string.email)}\", \"info\": \"${name.value}, ${phone.value}\"}")
+        val body = RequestBody.create(JSON, "{ \"email\": \"${activity.getString(R.string.email)}\", \"additional_info\": \"${name.value}, ${phone.value}\"}")
         val request = Request.Builder()
                 .url(URL + "cto-help")
                 .addHeader("Content-Type", "application/json")
