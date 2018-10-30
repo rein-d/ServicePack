@@ -35,15 +35,6 @@ class StartViewModel : ViewModel() {
     val phone = MutableLiveData<String>()
     val phoneError = MutableLiveData<String>()
 
-    fun init(activity: MainActivity) {
-        this.activity = activity
-        if (activity.resources.getBoolean(R.bool.integration)) {
-            val user = UserApi.getAuthenticatedUser(activity)
-            phoneError.value = user?.phone
-        }
-
-    }
-
     fun help() {
         nameError.value = null
         phoneError.value = null

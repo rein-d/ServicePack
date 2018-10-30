@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import corp.remotehelp.integration.evotor.ru.databinding.FragmentStartBinding
+import ru.evotor.framework.users.UserApi
 
 
 class StartFragment : Fragment() {
@@ -16,9 +17,10 @@ class StartFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        viewModel = ViewModelProviders.of(this).get(StartViewModel::class.java).apply {
-            init(this@StartFragment.activity as MainActivity)
-        }
+        viewModel = ViewModelProviders.of(this).get(StartViewModel::class.java)
+        val user = UserApi.getAuthenticatedUser(requireContext())
+        viewModel.name.value = user?.firstName
+        viewModel.phone.value = user?.phone
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
