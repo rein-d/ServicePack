@@ -10,7 +10,7 @@ android {
         applicationId "corp.remotehelp.integration.evotor.ru"
         minSdkVersion 23
         targetSdkVersion 28
-        versionCode 2
+        versionCode genVersionCode()
         versionName "1.0"
     }
 

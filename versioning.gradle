@@ -1,0 +1,12 @@
+ext {
+
+    genVersionCode = {
+        def process = "git rev-list --all --count".execute()
+        return process.text.toInteger()
+    }
+
+    genVersionName = {
+        def process = "git describe --tags".execute()
+        return process.text.toString().trim()
+    }
+}
