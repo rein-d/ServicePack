@@ -18,6 +18,7 @@ class StartFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         viewModel = ViewModelProviders.of(this).get(StartViewModel::class.java)
+        viewModel.init(requireActivity() as MainActivity)
         val user = UserApi.getAuthenticatedUser(requireContext())
         viewModel.name.value = user?.firstName
         viewModel.phone.value = user?.phone

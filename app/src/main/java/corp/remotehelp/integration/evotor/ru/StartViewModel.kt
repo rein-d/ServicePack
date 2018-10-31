@@ -1,5 +1,6 @@
 package corp.remotehelp.integration.evotor.ru
 
+import android.content.Context
 import android.util.Log
 import android.widget.Toast
 import androidx.lifecycle.MutableLiveData
@@ -11,7 +12,6 @@ import kotlinx.coroutines.experimental.async
 import kotlinx.coroutines.experimental.launch
 import okhttp3.*
 import okhttp3.logging.HttpLoggingInterceptor
-import ru.evotor.framework.users.UserApi
 import java.io.IOException
 
 class StartViewModel : ViewModel() {
@@ -29,6 +29,10 @@ class StartViewModel : ViewModel() {
             .create()
 
     lateinit var activity: MainActivity
+
+    fun init(activity: MainActivity) {
+        this.activity = activity
+    }
 
     val name = MutableLiveData<String>()
     val nameError = MutableLiveData<String>()
