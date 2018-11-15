@@ -37,6 +37,11 @@ android {
             applicationIdSuffix ".sibinteg"
             versionNameSuffix "-sibinteg"
         }
+        epoha {
+            dimension "brand"
+            applicationIdSuffix ".epoha"
+            versionNameSuffix "-epoha"
+        }
     }
 }
 
