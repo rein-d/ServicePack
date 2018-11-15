@@ -77,7 +77,7 @@ class StartViewModel : ViewModel() {
                         Toast.makeText(activity, it.error_message, Toast.LENGTH_LONG).show()
                     }
                 } ?: run {
-                    Toast.makeText(activity, "Не удалось отправить запрос. Неизвестная ошибка", Toast.LENGTH_LONG).show()
+                    Toast.makeText(activity, "Не удалось отправить запрос. Ошибка ${response?.code() ?: "неизвестная"}", Toast.LENGTH_LONG).show()
                 }
             }
         }

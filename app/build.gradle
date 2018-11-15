@@ -42,6 +42,11 @@ android {
             applicationIdSuffix ".epoha"
             versionNameSuffix "-epoha"
         }
+        businessdoc {
+            dimension "brand"
+            applicationIdSuffix ".businessdoc"
+            versionNameSuffix "-businessdoc"
+        }
     }
 }
 
