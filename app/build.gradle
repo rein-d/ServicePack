@@ -47,6 +47,11 @@ android {
             applicationIdSuffix ".businessdoc"
             versionNameSuffix "-businessdoc"
         }
+        procs {
+            dimension "brand"
+            applicationIdSuffix ".procs"
+            versionNameSuffix "-procs"
+        }
     }
 }
 
