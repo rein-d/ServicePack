@@ -52,6 +52,11 @@ android {
             applicationIdSuffix ".procs"
             versionNameSuffix "-procs"
         }
+        lad {
+            dimension "brand"
+            applicationIdSuffix ".lad"
+            versionNameSuffix "-lad"
+        }
     }
 }
 
