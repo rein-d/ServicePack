@@ -57,6 +57,11 @@ android {
             applicationIdSuffix ".lad"
             versionNameSuffix "-lad"
         }
+        kkm {
+            dimension "brand"
+            applicationIdSuffix ".kkm"
+            versionNameSuffix "-kkm"
+        }
     }
 }
 
