@@ -67,6 +67,11 @@ android {
             applicationIdSuffix ".infosaver"
             versionNameSuffix "-infosaver"
         }
+        ermolino {
+            dimension "brand"
+            applicationIdSuffix ".ermolino"
+            versionNameSuffix "-ermolino"
+        }
     }
 }
 
