@@ -77,6 +77,11 @@ android {
             applicationIdSuffix ".etim"
             versionNameSuffix "-etim"
         }
+        terminalservice {
+            dimension "brand"
+            applicationIdSuffix ".terminalservice"
+            versionNameSuffix "-terminalservice"
+        }
     }
 }
 
