@@ -72,6 +72,11 @@ android {
             applicationIdSuffix ".ermolino"
             versionNameSuffix "-ermolino"
         }
+        etim {
+            dimension "brand"
+            applicationIdSuffix ".etim"
+            versionNameSuffix "-etim"
+        }
     }
 }
 
