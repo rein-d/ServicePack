@@ -82,6 +82,16 @@ android {
             applicationIdSuffix ".terminalservice"
             versionNameSuffix "-terminalservice"
         }
+        alphabank {
+            dimension "brand"
+            applicationIdSuffix ".alphabank"
+            versionNameSuffix "-alphabank"
+        }
+        crypset {
+            dimension "brand"
+            applicationIdSuffix ".crypset"
+            versionNameSuffix "-crypset"
+        }
     }
 }
 
