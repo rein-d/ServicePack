@@ -27,6 +27,11 @@ android {
 
     flavorDimensions "brand"
     productFlavors {
+        sale {
+            dimension "brand"
+            applicationIdSuffix ".sale"
+            versionNameSuffix "-sale"
+        }
         sampo {
             dimension "brand"
             applicationIdSuffix ".samporemotehelp"
@@ -102,10 +107,15 @@ android {
             applicationIdSuffix ".kassa77"
             versionNameSuffix "-kassa77"
         }
-        sale {
+        ligaservice {
             dimension "brand"
-            applicationIdSuffix ".sale"
-            versionNameSuffix "-sale"
+            applicationIdSuffix ".ligaservice"
+            versionNameSuffix "-ligaservice"
+        }
+        evokassa {
+            dimension "brand"
+            applicationIdSuffix ".evokassa"
+            versionNameSuffix "-evokassa"
         }
     }
 }
