@@ -92,6 +92,21 @@ android {
             applicationIdSuffix ".crypset"
             versionNameSuffix "-crypset"
         }
+        crypset {
+            dimension "brand"
+            applicationIdSuffix ".crypset"
+            versionNameSuffix "-crypset"
+        }
+        kassa77 {
+            dimension "brand"
+            applicationIdSuffix ".kassa77"
+            versionNameSuffix "-kassa77"
+        }
+        sale {
+            dimension "brand"
+            applicationIdSuffix ".sale"
+            versionNameSuffix "-sale"
+        }
     }
 }
 
