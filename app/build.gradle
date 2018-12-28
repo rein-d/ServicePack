@@ -117,6 +117,26 @@ android {
             applicationIdSuffix ".evokassa"
             versionNameSuffix "-evokassa"
         }
+        technokassa {
+            dimension "brand"
+            applicationIdSuffix ".technokassa"
+            versionNameSuffix "-technokassa"
+        }
+        rostelecom {
+            dimension "brand"
+            applicationIdSuffix ".rostelecom"
+            versionNameSuffix "-rostelecom"
+        }
+        algoritm {
+            dimension "brand"
+            applicationIdSuffix ".algoritm"
+            versionNameSuffix "-algoritm"
+        }
+        posterritory {
+            dimension "brand"
+            applicationIdSuffix ".posterritory"
+            versionNameSuffix "-posterritory"
+        }
     }
 }
 
