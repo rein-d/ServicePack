@@ -137,6 +137,11 @@ android {
             applicationIdSuffix ".posterritory"
             versionNameSuffix "-posterritory"
         }
+        astral {
+            dimension "brand"
+            applicationIdSuffix ".astral"
+            versionNameSuffix "-astral"
+        }
     }
 }
 
