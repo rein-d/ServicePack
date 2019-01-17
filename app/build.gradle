@@ -32,6 +32,16 @@ android {
             applicationIdSuffix ".sale"
             versionNameSuffix "-sale"
         }
+        sale2 {
+            dimension "brand"
+            applicationIdSuffix ".sale2"
+            versionNameSuffix "-sale2"
+        }
+        install {
+            dimension "brand"
+            applicationIdSuffix ".install"
+            versionNameSuffix "-install"
+        }
         sampo {
             dimension "brand"
             applicationIdSuffix ".samporemotehelp"
