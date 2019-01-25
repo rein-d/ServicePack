@@ -162,6 +162,41 @@ android {
             applicationIdSuffix ".denvic"
             versionNameSuffix "-denvic"
         }
+        ocean {
+            dimension "brand"
+            applicationIdSuffix ".ocean"
+            versionNameSuffix "-ocean"
+        }
+        evoline {
+            dimension "brand"
+            applicationIdSuffix ".evoline"
+            versionNameSuffix "-evoline"
+        }
+        slon {
+            dimension "brand"
+            applicationIdSuffix ".slon"
+            versionNameSuffix "-slon"
+        }
+        twoxtwo {
+            dimension "brand"
+            applicationIdSuffix ".twoxtwo"
+            versionNameSuffix "-twoxtwo"
+        }
+        dcraft {
+            dimension "brand"
+            applicationIdSuffix ".dcraft"
+            versionNameSuffix "-dcraft"
+        }
+        evotorg {
+            dimension "brand"
+            applicationIdSuffix ".evotorg"
+            versionNameSuffix "-evotorg"
+        }
+        meta {
+            dimension "brand"
+            applicationIdSuffix ".meta"
+            versionNameSuffix "-meta"
+        }
     }
 }
 
