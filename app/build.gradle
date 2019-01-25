@@ -152,6 +152,16 @@ android {
             applicationIdSuffix ".astral"
             versionNameSuffix "-astral"
         }
+        artol {
+            dimension "brand"
+            applicationIdSuffix ".artol"
+            versionNameSuffix "-artol"
+        }
+        denvic {
+            dimension "brand"
+            applicationIdSuffix ".denvic"
+            versionNameSuffix "-denvic"
+        }
     }
 }
 
