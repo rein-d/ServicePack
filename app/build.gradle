@@ -197,6 +197,11 @@ android {
             applicationIdSuffix ".meta"
             versionNameSuffix "-meta"
         }
+        worldcashbox {
+            dimension "brand"
+            applicationIdSuffix ".worldcashbox"
+            versionNameSuffix "-worldcashbox"
+        }
     }
 }
 
