@@ -202,6 +202,31 @@ android {
             applicationIdSuffix ".worldcashbox"
             versionNameSuffix "-worldcashbox"
         }
+        kservice {
+            dimension "brand"
+            applicationIdSuffix ".kservice"
+            versionNameSuffix "-kservice"
+        }
+        specuchet {
+            dimension "brand"
+            applicationIdSuffix ".specuchet"
+            versionNameSuffix "-specuchet"
+        }
+        statum {
+            dimension "brand"
+            applicationIdSuffix ".statum"
+            versionNameSuffix "-statum"
+        }
+        fartov {
+            dimension "brand"
+            applicationIdSuffix ".fartov"
+            versionNameSuffix "-fartov"
+        }
+        samoilenko {
+            dimension "brand"
+            applicationIdSuffix ".samoilenko"
+            versionNameSuffix "-samoilenko"
+        }
     }
 }
 
