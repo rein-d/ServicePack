@@ -10,8 +10,9 @@ android {
         applicationId "corp.remotehelp.integration.evotor.ru"
         minSdkVersion 23
         targetSdkVersion 28
-        versionCode genVersionCode()
-        versionName "1.0"
+        versionCode 66
+        versionName "1.2"
+        versionNameSuffix = '1'
     }
 
     dataBinding {
@@ -27,206 +28,293 @@ android {
 
     flavorDimensions "brand"
     productFlavors {
-        sale {
+
+        ARTA {
             dimension "brand"
-            applicationIdSuffix ".sale"
-            versionNameSuffix "-sale"
+            applicationIdSuffix ".arta1"
+            versionNameSuffix "-arta1"
         }
-        sale2 {
+        Expert {
             dimension "brand"
-            applicationIdSuffix ".sale2"
-            versionNameSuffix "-sale2"
+            applicationIdSuffix ".expert"
+            versionNameSuffix "-expert"
         }
-        install {
+        ikar {
             dimension "brand"
-            applicationIdSuffix ".install"
-            versionNameSuffix "-install"
+            applicationIdSuffix ".ikar"
+            versionNameSuffix "-ikar"
         }
-        sampo {
+        doorzArenda {
             dimension "brand"
-            applicationIdSuffix ".samporemotehelp"
-            versionNameSuffix "-samporemotehelp"
+            applicationIdSuffix ".doorzArenda2"
+            versionNameSuffix "-doorzArenda2"
         }
-        sibinteg {
+        SKV {
             dimension "brand"
-            applicationIdSuffix ".sibinteg"
-            versionNameSuffix "-sibinteg"
+            applicationIdSuffix ".skv"
+            versionNameSuffix "-skv"
         }
-        epoha {
+        ItCom {
             dimension "brand"
-            applicationIdSuffix ".epoha"
-            versionNameSuffix "-epoha"
+            applicationIdSuffix ".itcom"
+            versionNameSuffix "-itcom"
         }
-        businessdoc {
+        ANADO {
             dimension "brand"
-            applicationIdSuffix ".businessdoc"
-            versionNameSuffix "-businessdoc"
+            applicationIdSuffix ".anado"
+            versionNameSuffix "-anado"
         }
-        procs {
+        spectr {
             dimension "brand"
-            applicationIdSuffix ".procs"
-            versionNameSuffix "-procs"
-        }
-        lad {
-            dimension "brand"
-            applicationIdSuffix ".lad"
-            versionNameSuffix "-lad"
-        }
-        kkm {
-            dimension "brand"
-            applicationIdSuffix ".kkm"
-            versionNameSuffix "-kkm"
-        }
-        infosaver {
-            dimension "brand"
-            applicationIdSuffix ".infosaver"
-            versionNameSuffix "-infosaver"
-        }
-        ermolino {
-            dimension "brand"
-            applicationIdSuffix ".ermolino"
-            versionNameSuffix "-ermolino"
+            applicationIdSuffix ".spectrArenda"
+            versionNameSuffix "-spectrArenda"
         }
         etim {
             dimension "brand"
-            applicationIdSuffix ".etim"
-            versionNameSuffix "-etim"
+            applicationIdSuffix ".etim5i"
+            versionNameSuffix "-etim5i"
         }
-        terminalservice {
+        NTS {
             dimension "brand"
-            applicationIdSuffix ".terminalservice"
-            versionNameSuffix "-terminalservice"
+            applicationIdSuffix ".nts"
+            versionNameSuffix "-nts"
         }
-        alphabank {
+        evobiz {
             dimension "brand"
-            applicationIdSuffix ".alphabank"
-            versionNameSuffix "-alphabank"
+            applicationIdSuffix ".evobiz"
+            versionNameSuffix "-evobiz"
         }
-        crypset {
+        kiasoft {
             dimension "brand"
-            applicationIdSuffix ".crypset"
-            versionNameSuffix "-crypset"
+            applicationIdSuffix ".kiasoft"
+            versionNameSuffix "-kiasoft"
         }
-        crypset {
+        masterKKT {
             dimension "brand"
-            applicationIdSuffix ".crypset"
-            versionNameSuffix "-crypset"
+            applicationIdSuffix ".masterKKT"
+            versionNameSuffix "-masterKKT"
         }
-        kassa77 {
+        kkmPlus {
             dimension "brand"
-            applicationIdSuffix ".kassa77"
-            versionNameSuffix "-kassa77"
+            applicationIdSuffix ".kkmPlus"
+            versionNameSuffix "-kkmPlus"
         }
-        ligaservice {
+        lad {
             dimension "brand"
-            applicationIdSuffix ".ligaservice"
-            versionNameSuffix "-ligaservice"
+            applicationIdSuffix ".ladarenda10"
+            versionNameSuffix "-ladarenda10"
         }
-        evokassa {
+        kasscentr {
             dimension "brand"
-            applicationIdSuffix ".evokassa"
-            versionNameSuffix "-evokassa"
+            applicationIdSuffix ".kasscentr"
+            versionNameSuffix "-kasscentr"
         }
-        technokassa {
+        rokan {
             dimension "brand"
-            applicationIdSuffix ".technokassa"
-            versionNameSuffix "-technokassa"
-        }
-        rostelecom {
-            dimension "brand"
-            applicationIdSuffix ".rostelecom"
-            versionNameSuffix "-rostelecom"
-        }
-        algoritm {
-            dimension "brand"
-            applicationIdSuffix ".algoritm"
-            versionNameSuffix "-algoritm"
-        }
-        posterritory {
-            dimension "brand"
-            applicationIdSuffix ".posterritory"
-            versionNameSuffix "-posterritory"
+            applicationIdSuffix ".rokan"
+            versionNameSuffix "-rokan"
         }
         astral {
             dimension "brand"
-            applicationIdSuffix ".astral"
-            versionNameSuffix "-astral"
+            applicationIdSuffix ".astral1"
+            versionNameSuffix "-astral1"
         }
-        artol {
+        master {
             dimension "brand"
-            applicationIdSuffix ".artol"
-            versionNameSuffix "-artol"
+            applicationIdSuffix ".master"
+            versionNameSuffix "-master"
         }
-        denvic {
+        ATM {
             dimension "brand"
-            applicationIdSuffix ".denvic"
-            versionNameSuffix "-denvic"
+            applicationIdSuffix ".atm_Arenda"
+            versionNameSuffix "-atm_Arenda"
         }
-        ocean {
+        vkassy {
             dimension "brand"
-            applicationIdSuffix ".ocean"
-            versionNameSuffix "-ocean"
+            applicationIdSuffix ".vkassy"
+            versionNameSuffix "-vkassy"
         }
-        evoline {
+        asf {
             dimension "brand"
-            applicationIdSuffix ".evoline"
-            versionNameSuffix "-evoline"
+            applicationIdSuffix ".asf"
+            versionNameSuffix "-asf"
         }
-        slon {
+        aist {
             dimension "brand"
-            applicationIdSuffix ".slon"
-            versionNameSuffix "-slon"
+            applicationIdSuffix ".aist"
+            versionNameSuffix "-aist"
         }
-        twoxtwo {
+        partskasArenda {
             dimension "brand"
-            applicationIdSuffix ".twoxtwo"
-            versionNameSuffix "-twoxtwo"
+            applicationIdSuffix ".partskasArenda"
+            versionNameSuffix "-partskasArenda"
         }
-        dcraft {
+        centrakassArenda {
             dimension "brand"
-            applicationIdSuffix ".dcraft"
-            versionNameSuffix "-dcraft"
+            applicationIdSuffix ".centrakassArenda"
+            versionNameSuffix "-centrakassArenda"
         }
-        evotorg {
+        deltaplus {
             dimension "brand"
-            applicationIdSuffix ".evotorg"
-            versionNameSuffix "-evotorg"
+            applicationIdSuffix ".deltaplus"
+            versionNameSuffix "-deltaplus"
         }
-        meta {
+        evotorsupport {
             dimension "brand"
-            applicationIdSuffix ".meta"
-            versionNameSuffix "-meta"
+            applicationIdSuffix ".evotorsupport"
+            versionNameSuffix "-evotorsupport"
         }
-        worldcashbox {
+        kontur {
             dimension "brand"
-            applicationIdSuffix ".worldcashbox"
-            versionNameSuffix "-worldcashbox"
-        }
-        kservice {
-            dimension "brand"
-            applicationIdSuffix ".kservice"
-            versionNameSuffix "-kservice"
-        }
-        specuchet {
-            dimension "brand"
-            applicationIdSuffix ".specuchet"
-            versionNameSuffix "-specuchet"
-        }
-        statum {
-            dimension "brand"
-            applicationIdSuffix ".statum"
-            versionNameSuffix "-statum"
+            applicationIdSuffix ".kontur"
+            versionNameSuffix "-kontur"
         }
         fartov {
             dimension "brand"
             applicationIdSuffix ".fartov"
             versionNameSuffix "-fartov"
         }
-        samoilenko {
+        systemservice {
             dimension "brand"
-            applicationIdSuffix ".samoilenko"
-            versionNameSuffix "-samoilenko"
+            applicationIdSuffix ".systemservice"
+            versionNameSuffix "-systemservice"
         }
+        astralIstra {
+            dimension "brand"
+            applicationIdSuffix ".astralIstra"
+            versionNameSuffix "-astralIstra"
+        }
+        VesiArenda {
+            dimension "brand"
+            applicationIdSuffix ".VesiArenda"
+            versionNameSuffix "-VesiArenda"
+        }
+        SoftBalance {
+            dimension "brand"
+            applicationIdSuffix ".SoftBalance"
+            versionNameSuffix "-SoftBalance"
+        }
+        EvotorL {
+            dimension "brand"
+            applicationIdSuffix ".EvotorL"
+            versionNameSuffix "-EvotorL"
+        }
+        kassa77 {
+            dimension "brand"
+            applicationIdSuffix ".kassa77"
+            versionNameSuffix "-kassa77"
+        }
+        slon {
+            dimension "brand"
+            applicationIdSuffix ".slon"
+            versionNameSuffix "-slon"
+        }
+        lad {
+            dimension "brand"
+            applicationIdSuffix ".lad"
+            versionNameSuffix "-lad"
+        }
+        inok {
+            dimension "brand"
+            applicationIdSuffix ".inok"
+            versionNameSuffix "-inok"
+        }
+        businessdoc {
+            dimension "brand"
+            applicationIdSuffix ".businessdoc"
+            versionNameSuffix "-businessdoc"
+        }
+        olimp {
+            dimension "brand"
+            applicationIdSuffix ".olimp"
+            versionNameSuffix "-olimp"
+        }
+        heshdesk {
+            dimension "brand"
+            applicationIdSuffix ".heshdesk"
+            versionNameSuffix "-heshdesk"
+        }
+        fiscaltech {
+            dimension "brand"
+            applicationIdSuffix ".fiscaltech"
+            versionNameSuffix "-fiscaltech"
+        }
+        f1 {
+            dimension "brand"
+            applicationIdSuffix ".f1"
+            versionNameSuffix "-f1"
+        }
+        prizma {
+            dimension "brand"
+            applicationIdSuffix ".prizma"
+            versionNameSuffix "-prizma"
+        }
+        RCK {
+            dimension "brand"
+            applicationIdSuffix ".RCK"
+            versionNameSuffix "-RCK"
+        }
+        ServiceKomplekt {
+            dimension "brand"
+            applicationIdSuffix ".ServiceKomplekt"
+            versionNameSuffix "-ServiceKomplekt"
+        }
+        NewTech {
+            dimension "brand"
+            applicationIdSuffix ".NewTech"
+            versionNameSuffix "-NewTech"
+        }
+        mast {
+            dimension "brand"
+            applicationIdSuffix ".mast"
+            versionNameSuffix "-mast"
+        }
+        electron {
+            dimension "brand"
+            applicationIdSuffix ".electron"
+            versionNameSuffix "-electron"
+        }
+        vyatka {
+            dimension "brand"
+            applicationIdSuffix ".vyatka"
+            versionNameSuffix "-vyatka"
+        }
+        sbr {
+            dimension "brand"
+            applicationIdSuffix ".sbr"
+            versionNameSuffix "-sbr"
+        }
+        sab {
+            dimension "brand"
+            applicationIdSuffix ".sab1"
+            versionNameSuffix "-sab1"
+        }
+        vlasenko {
+            dimension "brand"
+            applicationIdSuffix ".vlasenko"
+            versionNameSuffix "-vlasenko"
+        }
+        ARM {
+            dimension "brand"
+            applicationIdSuffix ".ARM"
+            versionNameSuffix "-ARM"
+        }
+        electrolux {
+            dimension "brand"
+            applicationIdSuffix ".electrolux"
+            versionNameSuffix "-electrolux"
+        }
+        bogachev {
+            dimension "brand"
+            applicationIdSuffix ".bogachev"
+            versionNameSuffix "-bogachev"
+        }
+        ps {
+            dimension "brand"
+            applicationIdSuffix ".ps"
+            versionNameSuffix "-ps"
+        }
+
     }
 }
 
@@ -237,12 +325,10 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha2'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
     implementation 'com.google.android.material:material:1.0.0'
-
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:0.30.1'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:0.30.1'
     implementation 'com.squareup.okhttp3:okhttp:3.11.0'
     implementation 'com.squareup.okhttp3:logging-interceptor:3.11.0'
     implementation 'com.google.code.gson:gson:2.8.5'
-
     implementation 'com.github.evotor:integration-library:v0.4.+'
 }

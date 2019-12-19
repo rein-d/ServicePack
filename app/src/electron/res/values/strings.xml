@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Электрон-сервис НСК Сервис</string>
+    <string name="phone1">+7(383)343-34-16</string>
+    <string name="phone2">+7(383)367-02-58</string>
+    <string name="email">service@escto.ru</string>
+</resources>

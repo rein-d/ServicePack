@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Премиум клиент</string>
+    <string name="phone1">+7 (800) 222-13-20</string>
+    <string name="phone2"></string>
+    <string name="email">sd@softbalance.ru</string>
+    <string name="text_message">Приложение отвечает за безопасную работу смарт-терминала. За подробностями обратитесь в организацию, в которой приобрели терминал.</string>
+</resources>

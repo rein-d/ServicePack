@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">КАССЦЕНТР Техподдержка</string>
+    <string name="phone1">+7(495)231-48-18</string>
+    <string name="phone2">+7(495)768-14-62</string>
+    <string name="email">service@kasscenter.ru</string>
+</resources>

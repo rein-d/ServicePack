@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Касса в прокат. Сампо</string>
+    <string name="phone1">+7(812) 640-95-60</string>
+    <string name="phone2">+7(495) 640-92-83</string>
+    <string name="email">kassa@sampokkm.ru</string>
+</resources>

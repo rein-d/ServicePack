@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Сервисный пакет "Икар"</string>
+    <string name="phone1">+7(988)575-61-61</string>
+    <string name="phone2">+7(988)998-78-78</string>
+    <string name="email">it-ikar@yandex.ru</string>
+</resources>

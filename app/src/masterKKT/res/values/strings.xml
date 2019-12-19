@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Мастер ККТ</string>
+    <string name="phone1">+7 (865)255-11-33</string>
+    <string name="phone2"></string>
+    <string name="email">ts@ts21.ru</string>
+</resources>

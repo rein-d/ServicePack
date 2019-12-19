@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string name="app_name">Сервисный пакет Бизнес-Информ</string>
+        <string name="phone1">+7(991)436-01-01</string>
+        <string name="phone2">+7(3842)777-150</string>
+        <string name="email">help@kkt42.ru</string>
+</resources>
