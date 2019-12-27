@@ -314,11 +314,7 @@ android {
             applicationIdSuffix ".ps"
             versionNameSuffix "-ps"
         }
-        ps123 {
-            dimension "brand"
-            applicationIdSuffix ".ps1232"
-            versionNameSuffix "-ps1232"
-        }
+
 
     }
 }
