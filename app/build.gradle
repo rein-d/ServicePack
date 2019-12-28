@@ -314,6 +314,11 @@ android {
             applicationIdSuffix ".ps"
             versionNameSuffix "-ps"
         }
+        evm {
+            dimension "brand"
+            applicationIdSuffix ".evm"
+            versionNameSuffix "-evm"
+        }
 
 
     }
