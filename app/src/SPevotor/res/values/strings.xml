@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Сервисный пакет</string>
+    <string name="phone1">+7 (495) 933-44-51</string>
+    <string name="phone2"></string>
+    <string name="email">ontec@evotor.ru</string>
+</resources>

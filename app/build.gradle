@@ -10,7 +10,7 @@ android {
         applicationId "corp.remotehelp.integration.evotor.ru"
         minSdkVersion 23
         targetSdkVersion 28
-        versionCode 66
+        versionCode 72
         versionName "1.2"
         versionNameSuffix = '1'
     }
@@ -256,8 +256,8 @@ android {
         }
         ServiceKomplekt {
             dimension "brand"
-            applicationIdSuffix ".ServiceKomplekt"
-            versionNameSuffix "-ServiceKomplekt"
+            applicationIdSuffix ".ServiceKomplekt1"
+            versionNameSuffix "-ServiceKomplekt1"
         }
         NewTech {
             dimension "brand"
@@ -318,6 +318,36 @@ android {
             dimension "brand"
             applicationIdSuffix ".evm"
             versionNameSuffix "-evm"
+        }
+        asf1 {
+            dimension "brand"
+            applicationIdSuffix ".asf1"
+            versionNameSuffix "-asf1"
+        }
+        Rarustp {
+            dimension "brand"
+            applicationIdSuffix ".Rarustp"
+            versionNameSuffix "-Rarustp"
+        }
+        SPevotor {
+            dimension "brand"
+            applicationIdSuffix ".SPevotor"
+            versionNameSuffix "-SPevotor"
+        }
+        buisnessdokOrel {
+            dimension "brand"
+            applicationIdSuffix ".buisnessdokOrel"
+            versionNameSuffix "-buisnessdokOrel"
+        }
+        kbservice {
+            dimension "brand"
+            applicationIdSuffix ".kbservice"
+            versionNameSuffix "-kbservice"
+        }
+        evoMaster {
+            dimension "brand"
+            applicationIdSuffix ".evoMaster"
+            versionNameSuffix "-evoMaster"
         }
 
 
