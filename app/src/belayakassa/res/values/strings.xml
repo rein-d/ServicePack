@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Сервисный пакет Белая Касса</string>
+    <string name="phone1">+7 (423) 200-05-66</string>
+    <string name="phone2"></string>
+    <string name="email">hello@belayakassa.ru</string>
+</resources>

@@ -10,7 +10,7 @@ android {
         applicationId "corp.remotehelp.integration.evotor.ru"
         minSdkVersion 23
         targetSdkVersion 28
-        versionCode 72
+        versionCode 106
         versionName "1.2"
         versionNameSuffix = '1'
     }
@@ -349,8 +349,121 @@ android {
             applicationIdSuffix ".evoMaster"
             versionNameSuffix "-evoMaster"
         }
-
-
+        soft {
+            dimension "brand"
+            applicationIdSuffix ".soft"
+            versionNameSuffix "-soft"
+        }
+        asf2 {
+            dimension "brand"
+            applicationIdSuffix ".asf2"
+            versionNameSuffix "-asf2"
+        }
+        avangard {
+            dimension "brand"
+            applicationIdSuffix ".avangard"
+            versionNameSuffix "-avangard"
+        }
+        torginvest {
+            dimension "brand"
+            applicationIdSuffix ".torginvest"
+            versionNameSuffix "-torginvest"
+        }
+        skkm {
+            dimension "brand"
+            applicationIdSuffix ".skkm"
+            versionNameSuffix "-skkm"
+        }
+        feniks {
+            dimension "brand"
+            applicationIdSuffix ".feniks"
+            versionNameSuffix "-feniks"
+        }
+        headline {
+            dimension "brand"
+            applicationIdSuffix ".headline"
+            versionNameSuffix "-headline"
+        }
+        retailprof {
+            dimension "brand"
+            applicationIdSuffix ".retailprof"
+            versionNameSuffix "-retailprof"
+        }
+        kiosk {
+            dimension "brand"
+            applicationIdSuffix ".kiosk"
+            versionNameSuffix "-kiosk"
+        }
+        doorz {
+            dimension "brand"
+            applicationIdSuffix ".doorz"
+            versionNameSuffix "-doorz"
+        }
+        belayakassa {
+            dimension "brand"
+            applicationIdSuffix ".belayakassa"
+            versionNameSuffix "-belayakassa"
+        }
+        elprom {
+            dimension "brand"
+            applicationIdSuffix ".elprom"
+            versionNameSuffix "-elprom"
+        }
+        vesi {
+            dimension "brand"
+            applicationIdSuffix ".vesi"
+            versionNameSuffix "-vesi"
+        }
+        ruselcom {
+            dimension "brand"
+            applicationIdSuffix ".ruselcom"
+            versionNameSuffix "-ruselcom"
+        }
+        tandem {
+            dimension "brand"
+            applicationIdSuffix ".tandem"
+            versionNameSuffix "-tandem"
+        }
+        ckit {
+            dimension "brand"
+            applicationIdSuffix ".ckit"
+            versionNameSuffix "-ckit"
+        }
+        esfin {
+            dimension "brand"
+            applicationIdSuffix ".esfin"
+            versionNameSuffix "-esfin"
+        }
+        centrkass {
+            dimension "brand"
+            applicationIdSuffix ".centrkass"
+            versionNameSuffix "-centrkass"
+        }
+        htcenter {
+            dimension "brand"
+            applicationIdSuffix ".htcenter"
+            versionNameSuffix "-htcenter"
+        }
+        maskpay {
+            dimension "brand"
+            applicationIdSuffix ".maskpay"
+            versionNameSuffix "-maskpay"
+        }
+        VolgaKassa {
+            dimension "brand"
+            applicationIdSuffix ".VolgaKassa"
+            versionNameSuffix "-VolgaKassa"
+        }
+        infosaver {
+            dimension "brand"
+            applicationIdSuffix ".infosaver"
+            versionNameSuffix "-infosaver"
+        }
+        wizard {
+            dimension "brand"
+            applicationIdSuffix ".wizard"
+            versionNameSuffix "-wizard"
+        }
     }
 }
 

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Сервисный пакет Тандем</string>
+    <string name="phone1">+7 (385) 222-60-23</string>
+    <string name="phone2"></string>
+    <string name="email">info@ecp-tandem.ru</string>
+</resources>

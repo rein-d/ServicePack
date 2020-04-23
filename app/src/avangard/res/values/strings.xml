@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Техническая поддержка</string>
+    <string name="phone1">+7 (495) 646-80-90</string>
+    <string name="phone2"></string>
+    <string name="email">vladislav@askkt.ru</string>
+</resources>

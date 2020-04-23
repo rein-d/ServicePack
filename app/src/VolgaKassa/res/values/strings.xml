@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Сервисный пакет VolgaKassa</string>
+    <string name="phone1">+7 (927) 510-25-85</string>
+    <string name="phone2"></string>
+    <string name="email">it@volgakassa.ru</string>
+</resources>

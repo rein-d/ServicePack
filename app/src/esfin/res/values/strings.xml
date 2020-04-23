@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Техподдержка Эсфин</string>
+    <string name="phone1">8 (800) 505-19-17</string>
+    <string name="phone2"></string>
+    <string name="email">service@esfin.ru</string>
+</resources>

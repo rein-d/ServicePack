@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">АСФ Сервисный пакет Москва</string>
+    <string name="phone1">+7 (495) 123-32-45</string>
+    <string name="phone2"></string>
+    <string name="email">info@asf-kassa.ru</string>
+</resources>
